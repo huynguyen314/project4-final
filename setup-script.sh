@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Variables
-resourceGroup="acdnd-c4-project"
+resourceGroup="cloud-demo"
 location="westus"
-osType="UbuntuLTS"
+osType="Debian11"
 vmssName="udacity-vmss"
 adminName="udacityadmin"
 storageAccount="udacitydiag$RANDOM"
@@ -31,7 +31,7 @@ az group create \
 echo "Resource group created: $resourceGroup"
 
 # Create Storage account
-echo "STEP 1 - Creating storage account $storageAccount"
+# echo "STEP 1 - Creating storage account $storageAccount"
 
 az storage account create \
 --name $storageAccount \
