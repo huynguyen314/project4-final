@@ -54,7 +54,7 @@ app = Flask(__name__)
 # Requests
 middleware = FlaskMiddleware(
     app,
-    exporter=AzureExporter(connection_string="InstrumentationKey=[your-guid]"),
+    exporter=AzureExporter(connection_string="InstrumentationKey=6bfed9a3-dc98-4b4d-bbd5-4da673d26144"),
     sampler=ProbabilitySampler(rate=1.0)
 )
 # Load configurations from environment or config file
